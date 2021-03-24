@@ -1,6 +1,6 @@
 trigger_github_workflow_run: 
 name: Trigger GitHub workflow run
-runs-on: [push]
+on: [push]
 env:
   MY_PAT: ${{ secrets.MY_PAT}}
 steps:

@@ -23,5 +23,5 @@ jobs:
           echo "PONG received from '${{ github.event.client_payload.repository }}'" && \
           curl -X POST https://api.github.com/repos/vitaTiZ/secondWorkflows/dispatches \
           -H 'Accept: application/vnd.github.everest-preview+json' \
-          -u ${{ secrets.MY_ENV.ACCESS_TOKEN }} \
+          -H 'Authorization: dml0YVRpWjpkMWNlZmJkODAxOTZiOWZlNDliMTlhNjU5NDY3MmY3Nzk0MTA4OTJi \
           --data '{"event_type": "ack", "client_payload": { "repository": "'"$GITHUB_REPOSI
